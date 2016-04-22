@@ -16,11 +16,13 @@ namespace MemeBot
     public class MessagesController : ApiController
     {
         private Dictionary<string, int> TemplateIds;
+        private MemeBot memeBot;
 
         public MessagesController()
         {
             TemplateIds = new Dictionary<string, int>();
             TemplateIds.Add("successkid", 61544);
+            memeBot = new MemeBot();
         }
 
         /// <summary>
@@ -37,7 +39,12 @@ namespace MemeBot
                 }
                 else
                 {
-                    return message.CreateReplyMessage("invalid syntax. meme [memeName] [topText], [bottom text]");
+                    // Get user intent with LUIS
+                    MemeLuis mLuis = await Luis.ParseUserInput(message.Text);
+                    // Get a response from our bot
+                    string answer = memeBot.answerUser(mLuis.intents[0].intent);
+                    // Post the response
+                    return message.CreateReplyMessage(answer);
                 }
             }
             else

@@ -1,0 +1,122 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "MemeBot",
+  "desc": "Having fun discussing with the bot",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "IsHuman",
+      "Children": []
+    },
+    {
+      "Name": "Thanks",
+      "Children": []
+    },
+    {
+      "Name": "Greeting",
+      "Children": []
+    },
+    {
+      "Name": "IsBot",
+      "Children": []
+    },
+    {
+      "Name": "StillBot",
+      "Children": []
+    },
+    {
+      "Name": "None",
+      "Children": []
+    },
+    {
+      "Name": "Hello",
+      "Children": []
+    },
+    {
+      "Name": "Help",
+      "Children": []
+    }
+  ],
+  "entities": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "i would like to create a meme.",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how do i create a meme?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "still a bot?",
+      "intent": "StillBot",
+      "entities": []
+    },
+    {
+      "text": "what about now?",
+      "intent": "StillBot",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "are you human?",
+      "intent": "IsHuman",
+      "entities": []
+    },
+    {
+      "text": "are you a bot?",
+      "intent": "IsBot",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "Thanks",
+      "entities": []
+    },
+    {
+      "text": "good job!",
+      "intent": "Thanks",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "how are you?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what's up?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "Thanks",
+      "entities": []
+    },
+    {
+      "text": "and now?",
+      "intent": "StillBot",
+      "entities": []
+    }
+  ]
+}

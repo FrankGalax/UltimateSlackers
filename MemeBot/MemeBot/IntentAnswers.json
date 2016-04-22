@@ -1,0 +1,34 @@
+[
+    {
+      "name": "IsHuman",
+      "answers": ["No. I am not human. I am only a bot serving to suit your needs."]
+    },
+    {
+      "name": "Thanks",
+      "answers": ["It was my pleasure.", "No problem!", "Hoping to work with you again."]
+    },
+    {
+      "name": "Greeting",
+      "answers": ["I'm good thanks."]
+    },
+    {
+      "name": "IsBot",
+      "answers": ["Yes I am! A very special bot that do not plan on eradicating humans :)."]
+    },
+    {
+      "name": "StillBot",
+      "answers": ["Well... I am still a bot. It's not like those things could change in an instant.", "Yes... yes I'm still a bot.", "Please...", "Leave me alone T.T"]
+    },
+    {
+      "name": "None",
+      "answers": ["Sorry, this speech pattern isn't recognized yet. Paps did a poor job. Don't blame me, I'm just a bot."]
+    },
+    {
+      "name": "Hello",
+      "answers": ["Hi!", "Do I know you?", "Hello"]
+    },
+    {
+      "name": "Help",
+      "answers": ["You can type {meme [memeName] [topText], [bottom text]} to generate your very own meme!"]
+    }
+]
