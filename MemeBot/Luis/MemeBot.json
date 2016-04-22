@@ -117,6 +117,16 @@
       "text": "and now?",
       "intent": "StillBot",
       "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Hello",
+      "entities": []
+    },
+    {
+      "text": "are you drunk?",
+      "intent": "None",
+      "entities": []
     }
   ]
 }

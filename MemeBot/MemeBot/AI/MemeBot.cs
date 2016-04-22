@@ -15,6 +15,8 @@ namespace MemeBot
         private Dictionary<string, string[]> Answers;
         private static Random random = new Random();
 
+        private static int stillBotCount = 0;
+
         public MemeBot()
         {
             Answers = new Dictionary<string, string[]>();
@@ -35,8 +37,19 @@ namespace MemeBot
 
         public string answerUser(string userIntent)
         {
+            string answer;
             string[] answers = Answers[userIntent];
-            return answers[random.Next(answers.Length)];
+            switch (userIntent)
+            {
+                case "StillBot":
+                    answer = answers[stillBotCount++];
+                    break;
+                default:
+                    stillBotCount = 0;
+                    answer = answers[random.Next(answers.Length)];
+                    break;
+            }
+            return answer;
         }
     }
 }
