@@ -24,16 +24,19 @@ namespace DJBot
         {
             if (message.Type == "Message")
             {
+                //message : connect
                 if (message.Text == "connect")
                 {
                     String returnMessage = SpotifyAPI.Web.SpotifyConnector.GetSpotifyConnector().Connect();
                     return message.CreateReplyMessage(returnMessage);
                 }
+                //message : create playlist playlistName
                 else if (message.Text.Substring(0, 16) == "create playlist ")
                 {
                     String returnMessage = SpotifyAPI.Web.SpotifyConnector.GetSpotifyConnector().CreateNewPlaylist(message.Text.Substring(16));
                     return message.CreateReplyMessage(returnMessage);
                 }
+                //message : add song songName by artistName to playlistName
                 else if (message.Text.Substring(0, 9) == "add song ")
                 {
                     String[] substring = Regex.Split(message.Text.Substring(9), " by ");
@@ -43,7 +46,7 @@ namespace DJBot
                     String returnMessage = SpotifyAPI.Web.SpotifyConnector.GetSpotifyConnector().AddSongToPlayList(substring2[1], substring[0], substring2[0]);
                     return message.CreateReplyMessage(returnMessage);
                 }
-                // return our reply to the user
+                // invalid request
                 return message.CreateReplyMessage($"DJBot has no clue whats going on");
             }
             else
