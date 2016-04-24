@@ -1,0 +1,40 @@
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\DJBot.dll.config
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\DJBot.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\DJBot.pdb
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Microsoft.Bot.Connector.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Microsoft.Bot.Connector.Utilities.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Microsoft.Rest.ClientRuntime.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Microsoft.WindowsAzure.Configuration.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Newtonsoft.Json.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\System.Net.Http.Formatting.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\System.Web.Http.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\System.Web.Http.WebHost.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Microsoft.Rest.ClientRuntime.xml
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Microsoft.WindowsAzure.Configuration.xml
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\Newtonsoft.Json.xml
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\System.Net.Http.Formatting.xml
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\System.Web.Http.xml
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\bin\System.Web.Http.WebHost.xml
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\obj\Debug\DJBot.csprojResolveAssemblyReference.cache
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\obj\Debug\DJBot.dll
+c:\users\tom\documents\visual studio 2015\Projects\DJBot\DJBot\obj\Debug\DJBot.pdb
+C:\UltimateSlackers\DJBot\DJBot\bin\DJBot.dll.config
+C:\UltimateSlackers\DJBot\DJBot\bin\DJBot.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\DJBot.pdb
+C:\UltimateSlackers\DJBot\DJBot\bin\Microsoft.Bot.Connector.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\Microsoft.Bot.Connector.Utilities.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\Newtonsoft.Json.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\System.Net.Http.Formatting.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\System.Web.Http.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\System.Web.Http.WebHost.dll
+C:\UltimateSlackers\DJBot\DJBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\UltimateSlackers\DJBot\DJBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\UltimateSlackers\DJBot\DJBot\bin\Newtonsoft.Json.xml
+C:\UltimateSlackers\DJBot\DJBot\bin\System.Net.Http.Formatting.xml
+C:\UltimateSlackers\DJBot\DJBot\bin\System.Web.Http.xml
+C:\UltimateSlackers\DJBot\DJBot\bin\System.Web.Http.WebHost.xml
+C:\UltimateSlackers\DJBot\DJBot\obj\Debug\DJBot.csprojResolveAssemblyReference.cache
+C:\UltimateSlackers\DJBot\DJBot\obj\Debug\DJBot.dll
+C:\UltimateSlackers\DJBot\DJBot\obj\Debug\DJBot.pdb
