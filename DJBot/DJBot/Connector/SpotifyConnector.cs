@@ -89,7 +89,6 @@ namespace SpotifyAPI.Web
                return $"A playlist named {playlistName} already exists";
             }
 
-            
             Models.FullPlaylist newPlaylist = mSpotify.CreatePlaylist(mProfile.Id, playlistName, false);
 
             Models.SimplePlaylist newSimplePlaylist = new Models.SimplePlaylist();
@@ -107,6 +106,7 @@ namespace SpotifyAPI.Web
             {
                 return "you need to connect to spotify before you can use this feature";
             }
+
             if (playlists == null)
             {
                 playlists = mSpotify.GetUserPlaylists(mProfile.Id).Items;
@@ -114,11 +114,31 @@ namespace SpotifyAPI.Web
 
             Models.SimplePlaylist playlist = playlists.Find(x => x.Name == playlistName);
 
+            if (playlist == null)
+            {
+                return $"could not find playlist {playlistName}";
+            }
+
             Models.SearchItem search = mSpotify.SearchItems(songName, Enums.SearchType.Track);
 
-            String songUri = search.Tracks.Items.Find(x => String.Equals(x.Artists[0].Name, artist, StringComparison.OrdinalIgnoreCase)).Uri;
+            if (search.Tracks == null || search.Tracks.Items.Count == 0)
+            {
+                return $"could not find song {songName}";
+            }
 
-            mSpotify.AddPlaylistTrack(mProfile.Id, playlist.Id, songUri);
+            Models.FullTrack songData = search.Tracks.Items.Find(x => String.Equals(x.Artists[0].Name, artist, StringComparison.OrdinalIgnoreCase));
+
+            if (songData == null)
+            {
+                return $"could not find song {songName} by {artist}";
+            }
+
+            Models.ErrorResponse error = mSpotify.AddPlaylistTrack(mProfile.Id, playlist.Id, songData.Uri);
+
+            if (error.Error != null)
+            {
+                return error.Error.Message;
+            }
 
             return $"{songName} by {artist} was sucessfully added to {playlistName}";
         }
